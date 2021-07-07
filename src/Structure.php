@@ -91,7 +91,7 @@ final class Structure
 
 
 	/**
-	 * @param array<string, array<int, string>> agent => (pattern, ...) $patterns
+	 * @param array<string, array<int, string>> $patterns (agent => (pattern, ...))
 	 * @return array<string, array<int, string>> agent => (pattern, ...)
 	 */
 	private function filterForAgent(array $patterns, string $agent): array
