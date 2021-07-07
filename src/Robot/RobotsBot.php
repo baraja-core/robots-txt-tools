@@ -51,7 +51,9 @@ final class RobotsBot
 	private function download(string $url): string
 	{
 		return (string) @file_get_contents(
-			$url, false, stream_context_create(
+			$url,
+			false,
+			stream_context_create(
 				[
 					'http' => [
 						'method' => 'GET',

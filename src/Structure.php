@@ -17,12 +17,16 @@ final class Structure
 	/** @var array<string, array<int, string>> (agent => (pattern, ...)) */
 	private array $disallowPatterns = [];
 
+
 	/**
 	 * @param array<int, \Baraja\RobotsTxt\ParserSection> $sections
 	 */
 	public function __construct(string $haystack, array $sections)
 	{
 		$this->haystack = trim($haystack);
+		foreach ($sections as $section) {
+			// Implement me.
+		}
 	}
 
 
@@ -87,8 +91,8 @@ final class Structure
 
 
 	/**
-	 * @param array<string, array<int, string>> (agent => (pattern, ...)) $patterns
-	 * @return array<string, array<int, string>> (agent => (pattern, ...))
+	 * @param array<string, array<int, string>> agent => (pattern, ...) $patterns
+	 * @return array<string, array<int, string>> agent => (pattern, ...)
 	 */
 	private function filterForAgent(array $patterns, string $agent): array
 	{
