@@ -9,7 +9,7 @@ final class ParserSection
 {
 	public function __construct(
 		private string $section,
-		private string $value
+		private string $value,
 	) {
 	}
 

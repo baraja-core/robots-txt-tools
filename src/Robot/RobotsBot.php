@@ -59,8 +59,8 @@ final class RobotsBot
 						'method' => 'GET',
 						'user_agent' => 'BarajaBot in PHP',
 					],
-				]
-			)
+				],
+			),
 		);
 	}
 
@@ -74,7 +74,7 @@ final class RobotsBot
 				Cache::EXPIRATION => $backup === true
 					? '1 month'
 					: $this->cacheExpiration,
-			]
+			],
 		);
 	}
 }
